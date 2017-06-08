@@ -1,8 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-const store = configureStore();
+const reducer = () => {};
+const store = createStore(reducer);
 
 const renderApp = () => {
 	render((
