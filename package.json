@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Lessons in Website Development",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --watch  --hot --host=0.0.0.0",

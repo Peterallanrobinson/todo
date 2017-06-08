@@ -1,0 +1,10 @@
+{
+  date: 0123456789,
+  todoBeingEdited: null,
+  todos: [
+    {
+      text: '',
+      type: ''
+    }
+  ]
+}
