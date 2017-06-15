@@ -1,0 +1,37 @@
+Todo App
+Date/ Day- theses appear in the top left and top right of the program.
+Whether they are needed is a question to be asked but the information 
+we need for this is of course the date and time and some form of being able 
+to get this information.
+
+Progress Bar- This Bar shows how far we are in completing the day’s todo’s. for this to function it
+needs to know how many todo there are so it knows how much the bars needs to be emptied and when they are completed 
+to fill it back up again (this would be filled the user clicks on 
+the Tick to complete it or the cross to delete the todo)
+
+Input Box- Input box where the user can add a new todo and by using the button it can confirm this and add the todo 
+to the list of todos *This would alter the Progress bar*.
+Buttons on each Todo
+Delete- Deletes the selected Todo not to be returned to
+Pause- Pauses the selected Todo and adds it to a “Do later” pile (questionable feature)
+Tick- This registers the Todo as compete and fills the Progress bar accordingly.
+
+
+Suggestions for Improvement
+
+Removal of the Pause Feature- This get rid of the Pause feature as 
+it has little impact on the program. 
+If someone wants to do their task later they just leave it in the main list. 
+Adding it to another list seems unnecessary.
+
+
+Saving Deleted Todo- Have a possible Backup for the Todo that have been deleted
+as it may have been a mistake to delete it.
+
+Extra Info in Todos- Have the option to Add time Deadlines to your Todo or allow them to carry on to the next day
+Save, Previous days todo’s- the previous Day’s todos are remember and 
+you can go back to them all the way upto a month then they are deleted.  
+
+Done Notification- A idea to help the progress bar. When you complete a Todo instead of it disappearing
+ of your screen it puts line through It and into a new section at the top called completed. Adds a sense of achievement. 
+This could be recycled code from the old “add later” feature. 
