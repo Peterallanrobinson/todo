@@ -1,36 +1,58 @@
-var ADD_TODO = "ADD_TODO"
-
+const ADD_TODO = "ADD_TODO";
 function addTodo(todoText) {
-return  {
-    type: ADD_TODO,
-    todoText: todoText
-  }	
+    return {
+        type: ADD_TODO,
+        todoText: todoText
+    };
 }
 
-helloPeter // This is CamalCase
-
-var REMOVE_TODO = "REMOVE_TODO"
-
+const REMOVE_TODO = "REMOVE_TODO"
 function removeTodo(id) {
-return {
- type: REMOVE_TODO,
- id: id
-}	
+    return {
+        type: REMOVE_TODO,
+        id: id
+    }   
+}
 
-EDIT_TODO_STATUS,
-id,
-status
+const EDIT_TODO_STATUS = "EDIT_TODO_STATUS" ;
+function editTodoStatus(id, status) {         
+    return {
+        type: EDIT_TODO_STATUS,
+        id,          
+        status
+    };
 
-var
+}
 
-START_EDITING_TODO,
-id
+const START_EDITING_TODO_TEXT = "START_EDITING_TODO_TEXT" ;
+function startEditingTodo(todoText) {
+    return {
+        type: START_EDITING_TODO_TEXT
+        todoText:todoText
+    };
+}
 
-EDIT_TODO_TEXT,
-id,
-text
+const EDIT_TODO_TEXT = "EDIT_TODO_TEXT";
+function editTodoText(id, todoText) {
+    return {
+      type: EDIT_TODO_TEXT
+      id,
+      todoText
+    };
+}
 
-STOP_EDITING_TODO
+const STOP_EDITING_TODO = "STOP_EDITING_TODO;
+function stopEditingTodo(id, todoText) {
+    return {
+        type: STOP_EDITING_TODO
+        id,
+        todoText 
+    };
+}
 
-CLEAR_DATA
-
+const CLEAR_DATA = "CLEAR_ DATA";
+function clearData () {
+  return {
+    type: CLEAR_DATA
+  };
+} 
