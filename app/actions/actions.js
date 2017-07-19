@@ -23,11 +23,11 @@ export function editTodoStatus(id, status) {
     };
 }
 
-export const START_EDITING_TODO_TEXT = "START_EDITING_TODO_TEXT";
-export function startEditingTodo(todoText) {
+export const START_EDITING_TODO = "START_EDITING_TODO_TEXT";
+export function startEditingTodo(id) {
     return {
-        type: START_EDITING_TODO_TEXT,
-        todoText
+        type: START_EDITING_TODO,
+        id
     };
 }
 

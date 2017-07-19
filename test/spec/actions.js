@@ -43,11 +43,11 @@ describe('Actions:', () => {
 
   describe("startEditingTodo", function() {
     it('should return a valid action to start editing the todo', () => {
-      const result = actions.startEditingTodo("Chicken Dinner");
+      const result = actions.startEditingTodo(15);
 
       expect(result).toEqual({
-        type: actions.START_EDITING_TODO_TEXT,
-        todoText: "Chicken Dinner"
+        type: actions.START_EDITING_TODO,
+        id: 15
       });
     });
   });
