@@ -24,6 +24,25 @@ describe('Reducers:', () => {
         ]
       });
     });
+it('should add more than one todo', function() {
+      let state = {
+        todos: []
+      };
+
+      const result = reducer(state, actions.addTodo("Chicken Dinner"));
+
+      expect(result).toEqual({
+        todos: [
+          {
+            todoText: "Chicken Dinner, Turkey Dinner, Roast Beef"
+            status: "incomplete"
+        ]
+      });
+    });
+
+
+
+
   });
 });
 
