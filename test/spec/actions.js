@@ -55,10 +55,11 @@ describe('Actions:', () => {
 
   describe("editTodoText", function() {
     it('should return a valid edit todo text action', () => {
-      const result = actions.editTodoText("Turkey Dinner");
+      const result = actions.editTodoText(14, "Turkey Dinner");
 
       expect(result).toEqual({
         type: actions.EDIT_TODO_TEXT,
+        id: 14,
         todoText:"Turkey Dinner"
       });
     });

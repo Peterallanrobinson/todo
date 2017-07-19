@@ -32,9 +32,10 @@ export function startEditingTodo(id) {
 }
 
 export const EDIT_TODO_TEXT = "EDIT_TODO_TEXT";
-export function editTodoText(todoText) {
+export function editTodoText(id, todoText) {
     return {
       type: EDIT_TODO_TEXT,
+      id,
       todoText
     };
 }
