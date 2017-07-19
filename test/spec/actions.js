@@ -28,41 +28,37 @@ describe('Actions:', () => {
     });
   });
 
-
   describe("editTodoStatus", function() {
     it('should return a valid edit todo status action', () => {
-      const result = actions.editTodoStatus(14);
+      const result = actions.editTodoStatus(14,"Chicken Dinner");
 
       expect(result).toEqual({
         type: actions.EDIT_TODO_STATUS,
-        id: 14
-        status:status //or Editing?
+        id: 14,
+        status: "Chicken Dinner"
 
       });
     });
   });
 
-  
   describe("startEditingTodo", function() {
     it('should return a valid action to start editing the todo', () => {
-      const result = actions.startEditingTodo(14);
+      const result = actions.startEditingTodo("Chicken Dinner");
 
       expect(result).toEqual({
-        type: actions.START_EDITING_TODO
-        id: 14
-
+        type: actions.START_EDITING_TODO_TEXT,
+        todoText: "Chicken Dinner"
       });
     });
   });
-
 
   describe("editTodoText", function() {
     it('should return a valid edit todo text action', () => {
-      const result = actions.editTodoText("Turkey Dinner");
+      const result = actions.editTodoText(14,"Turkey Dinner");
 
       expect(result).toEqual({
         type: actions.EDIT_TODO_TEXT,
-        id: 14
+        id: 14,
         todoText:"Turkey Dinner"
 
       });
@@ -72,17 +68,16 @@ describe('Actions:', () => {
   
   describe("stopEditingTodo", function() {
     it('should return a valid stop editing todo action', () => {
-      const result = actions.stopEditingTodo("Turkey Dinner");
+      const result = actions.stopEditingTodo( 14,"Turkey Dinner");
 
       expect(result).toEqual({
         type: actions.STOP_EDITING_TODO,
-        id: 14
+        id: 14,
         todoText:"Turkey Dinner"
       });
     });
   });
 
-  //I think we need here some type of editing status again so if the todo is completed we can clear the data as shown below.
   describe("clearData", function() {
     it('should return a valid clear data action', () => {
       const result = actions.clearData(14);
