@@ -53,3 +53,4 @@ export function clearData() {
     type: CLEAR_DATA
   };
 }
+

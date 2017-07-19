@@ -28,7 +28,6 @@ describe('Actions:', () => {
     });
   });
 
-
   describe("editTodoStatus", function() {
     it('should return a valid edit todo status action', () => {
       const result = actions.editTodoStatus(14, "incomplete");
@@ -41,14 +40,13 @@ describe('Actions:', () => {
     });
   });
 
-
   describe("startEditingTodo", function() {
     it('should return a valid action to start editing the todo', () => {
-      const result = actions.startEditingTodo(14);
+      const result = actions.startEditingTodo(15);
 
       expect(result).toEqual({
         type: actions.START_EDITING_TODO,
-        id: 14
+        id: 15
       });
     });
   });
@@ -60,7 +58,7 @@ describe('Actions:', () => {
       expect(result).toEqual({
         type: actions.EDIT_TODO_TEXT,
         id: 14,
-        todoText:"Turkey Dinner"
+        todoText: "Turkey Dinner"
       });
     });
   });
