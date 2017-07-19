@@ -24,6 +24,10 @@ describe('Reducers:', () => {
         ]
       });
     });
+
+    it('should add more than one todo', function () {
+
+    });
   });
 });
 
