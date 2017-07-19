@@ -11,41 +11,38 @@ export function removeTodo(id) {
     return {
         type: REMOVE_TODO,
         id
-    };   
+    };
 }
 
 export const EDIT_TODO_STATUS = "EDIT_TODO_STATUS";
-export function editTodoStatus(id, status) {         
+export function editTodoStatus(id, status) {
     return {
         type: EDIT_TODO_STATUS,
-        id,          
+        id,
         status
     };
 }
 
-export const START_EDITING_TODO_TEXT = "START_EDITING_TODO_TEXT";
-export function startEditingTodo(todoText) {
+export const START_EDITING_TODO = "START_EDITING_TODO";
+export function startEditingTodo(id) {
     return {
-        type: START_EDITING_TODO_TEXT,
-        todoText
+        type: START_EDITING_TODO,
+        id
     };
 }
 
 export const EDIT_TODO_TEXT = "EDIT_TODO_TEXT";
-export function editTodoText(id, todoText) {
+export function editTodoText(todoText) {
     return {
       type: EDIT_TODO_TEXT,
-      id,
       todoText
     };
 }
 
-export const STOP_EDITING_TODO = "STOP_EDITING_TODO"; 
-export function stopEditingTodo(id, todoText) {
+export const STOP_EDITING_TODO = "STOP_EDITING_TODO";
+export function stopEditingTodo() {
     return {
-        type: STOP_EDITING_TODO,
-        id,
-        todoText 
+        type: STOP_EDITING_TODO
     };
 }
 
@@ -54,4 +51,4 @@ export function clearData() {
   return {
     type: CLEAR_DATA
   };
-} 
+}
