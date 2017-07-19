@@ -93,17 +93,20 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </style>
 </head>
 
-<body id="HTMLReporter" class="html-reporter">
+<body id="HTMLReporter" class="html-reporter showDetails">
 <h1>Tested in HeadlessChrome 0.0.0 (Mac OS X 10.12.5) on Wed Jul 19 2017</h1>
 
 <div class="alert">
 
 
+<!-- <span class="failingAlert bar">Failed 1 specs</span> -->
+<span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
+  <a href="#" onclick="unfold();">Unfold</a></span>9 specs, 1 failed, 0 pending</span>
+<span class="resultsMenu bar">
+<a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
+   class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
+</span>
 
-  
-  <span class="passingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>9 specs, 0 failed, 0 pending</span>
-  
 
 
 </div>
@@ -177,14 +180,14 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     
     </div>
   
-    <div class="suite passed">
+    <div class="suite failed">
       <span class="description">Reducers: ADD_TODO</span>
     
       <div class="specSummary passed">
       <span class="description">should add a todo to the state</span>
       </div>
     
-      <div class="specSummary passed">
+      <div class="specSummary failed">
       <span class="description">should add more than one todo</span>
       </div>
     
@@ -194,6 +197,16 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </div>
 
 <div id="details">
+  
+  
+  <div class="specDetail failed">
+    <span class="description">Reducers: ADD_TODO should add more than one todo</span>
+    <div class="stackTrace">
+      <div class="resultMessage">Expected $.todos[0].todoText = 'Chicken Dinner' to equal 'Chicken Dinner, Turkey Dinner, Roast Beef'.
+    at Object.&lt;anonymous&gt; (http://localhost:9876/base/test/spec/reducers.js?18e470a3c012360e6267a41a674f5bae9f4a0537:76527:22)</div>
+    </div>
+  </div>
+  
   
 </div>
 
@@ -206,7 +219,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    
+    case 50: showFailures(); break;
   }
 };
 

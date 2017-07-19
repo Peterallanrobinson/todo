@@ -24,8 +24,8 @@ describe('Reducers:', () => {
         ]
       });
     });
-<<<<<<< HEAD
-it('should add more than one todo', function() {
+
+    it('should add more than one todo', function() {
       let state = {
         todos: []
       };
@@ -35,21 +35,12 @@ it('should add more than one todo', function() {
       expect(result).toEqual({
         todos: [
           {
-            todoText: "Chicken Dinner, Turkey Dinner, Roast Beef"
+            todoText: "Chicken Dinner, Turkey Dinner, Roast Beef",
             status: "incomplete"
+          }
         ]
       });
     });
-
-
-
-
-=======
-
-    it('should add more than one todo', function () {
-
-    });
->>>>>>> 7607636121f66877b044db614294ee1725f32bec
   });
 });
 
