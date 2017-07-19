@@ -41,11 +41,9 @@ export function editTodoText(id, todoText) {
 }
 
 export const STOP_EDITING_TODO = "STOP_EDITING_TODO"; 
-export function stopEditingTodo(id, todoText) {
+export function stopEditingTodo() {
     return {
         type: STOP_EDITING_TODO,
-        id,
-        todoText 
     };
 }
 

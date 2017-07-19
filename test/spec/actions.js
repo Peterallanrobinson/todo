@@ -68,12 +68,10 @@ describe('Actions:', () => {
   
   describe("stopEditingTodo", function() {
     it('should return a valid stop editing todo action', () => {
-      const result = actions.stopEditingTodo( 14,"Turkey Dinner");
+      const result = actions.stopEditingTodo();
 
       expect(result).toEqual({
         type: actions.STOP_EDITING_TODO,
-        id: 14,
-        todoText:"Turkey Dinner"
       });
     });
   });
