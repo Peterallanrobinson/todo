@@ -54,7 +54,7 @@ describe('Reducers:', () => {
         ]
       };
      
-      const resultState = reducer(initialState, actions.removeTodo("0"));
+      const resultState = reducer(initialState, actions.removeTodo(0));
     
       expect(resultState).toEqual({
         todos: []
