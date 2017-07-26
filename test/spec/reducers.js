@@ -9,13 +9,13 @@ describe('Reducers:', () => {
 
   describe('ADD_TODO', function() {
     it('should add a todo to the state', function() {
-      let state = {
+      let initialState = {
         todos: []
       };
 
-      const result = reducer(state, actions.addTodo("Chicken Dinner"));
+      const resultState = reducer(initialState, actions.addTodo("Chicken Dinner"));
 
-      expect(result).toEqual({
+      expect(resultState).toEqual({
         todos: [
           {
             todoText: "Chicken Dinner",
@@ -26,13 +26,13 @@ describe('Reducers:', () => {
     });
 
     it('should add more than one todo', function() {
-      let state = {
+      let initialState = {
         todos: []
       };
 
-      const result = reducer(state, actions.addTodo("Chicken Dinner, Turkey Dinner, Roast Beef"));
+      const resultState = reducer(initialState, actions.addTodo("Chicken Dinner, Turkey Dinner, Roast Beef"));
 
-      expect(result).toEqual({
+      expect(resultState).toEqual({
         todos: [
           {
             todoText: "Chicken Dinner, Turkey Dinner, Roast Beef",
@@ -45,7 +45,7 @@ describe('Reducers:', () => {
 
   describe('REMOVE_TODO', function() {
     it('should remove a todo from the state', function() {
-      let state = {
+      let initialState = {
         todos: [
           {
             todoText:"Turkey Dinner",
@@ -54,9 +54,9 @@ describe('Reducers:', () => {
         ]
       };
      
-      const result = reducer(state, actions.removeTodo("Turkey Dinner"));
+      const resultState = reducer(initialState, actions.removeTodo("Turkey Dinner"));
     
-      expect(result).toEqual({
+      expect(resultState).toEqual({
         todos: [
           {
             todoText: "Turkey Dinner"
