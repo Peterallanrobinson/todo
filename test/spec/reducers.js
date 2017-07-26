@@ -57,11 +57,7 @@ describe('Reducers:', () => {
       const resultState = reducer(initialState, actions.removeTodo("Turkey Dinner"));
     
       expect(resultState).toEqual({
-        todos: [
-          {
-            todoText: "Turkey Dinner"
-          }
-        ]
+        todos: []
       });
     });
   }};
