@@ -48,12 +48,13 @@ describe('Reducers:', () => {
       let initialState = {
         todos: [
           {
-          0
+            todoText:"Turkey Dinner",
+            status: "complete"
           }
         ]
       };
      
-      const resultState = reducer(initialState, actions.removeTodo("Turkey Dinner"));
+      const resultState = reducer(initialState, actions.removeTodo("0"));
     
       expect(resultState).toEqual({
         todos: []
