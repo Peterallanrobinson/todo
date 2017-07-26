@@ -48,8 +48,7 @@ describe('Reducers:', () => {
       let initialState = {
         todos: [
           {
-            todoText:"Turkey Dinner",
-            status: "complete"
+          0
           }
         ]
       };
