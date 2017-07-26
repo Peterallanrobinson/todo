@@ -45,11 +45,11 @@ describe('Reducers:', () => {
    it('should remove a todo from the state' , function() {
     let state = {
      todos: [
-          {
-            todoText: "Turkey Dinner",
-            status: "complete"
-          }
-        ]
+      {
+        todoText:"Turkey Dinner",
+        status: "complete"
+      }
+    ]
 
     };
      
