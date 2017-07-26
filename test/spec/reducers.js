@@ -35,7 +35,7 @@ describe('Reducers:', () => {
         todos: [
           {
             todoText: "Chicken Dinner, Turkey Dinner, Roast Beef",
-            status: "incomplete"z
+            status: "incomplete"
           }
         ]
       });
