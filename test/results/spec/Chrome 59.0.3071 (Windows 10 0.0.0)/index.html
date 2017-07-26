@@ -93,20 +93,14 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </style>
 </head>
 
-<body id="HTMLReporter" class="html-reporter showDetails">
-<h1>Tested in Chrome 59.0.3071 (Windows 10 0.0.0) on Wed Jul 19 2017</h1>
+<body id="HTMLReporter" class="html-reporter">
+<h1>Tested in Chrome 59.0.3071 (Windows 10 0.0.0) on Wed Jul 26 2017</h1>
 
 <div class="alert">
 
 
-<!-- <span class="failingAlert bar">Failed 1 specs</span> -->
-<span class="failingAlert bar"><span class="fold-buttons"><a href="#" onclick="fold();">Fold</a> | 
-  <a href="#" onclick="unfold();">Unfold</a></span>9 specs, 1 failed, 0 pending</span>
-<span class="resultsMenu bar">
-<a class="summaryMenuItem" onclick="showSummary();" href="#">Spec List<a>|<a 
-   class="detailsMenuItem" onclick="showFailures();" href="#">Failures</a>
-</span>
 
+  
 
 
 </div>
@@ -118,7 +112,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
   
   
     <div class="suite passed">
-      <span class="description">Actions: addTodo</span>
+      <span class="description">0</span>
     
       <div class="specSummary passed">
       <span class="description">should return a valid add todo action</span>
@@ -127,7 +121,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     </div>
   
     <div class="suite passed">
-      <span class="description">Actions: removeTodo</span>
+      <span class="description">1</span>
     
       <div class="specSummary passed">
       <span class="description">should return a valid remove todo action</span>
@@ -136,7 +130,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     </div>
   
     <div class="suite passed">
-      <span class="description">Actions: editTodoStatus</span>
+      <span class="description">2</span>
     
       <div class="specSummary passed">
       <span class="description">should return a valid edit todo status action</span>
@@ -145,7 +139,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     </div>
   
     <div class="suite passed">
-      <span class="description">Actions: startEditingTodo</span>
+      <span class="description">3</span>
     
       <div class="specSummary passed">
       <span class="description">should return a valid action to start editing the todo</span>
@@ -154,7 +148,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     </div>
   
     <div class="suite passed">
-      <span class="description">Actions: editTodoText</span>
+      <span class="description">4</span>
     
       <div class="specSummary passed">
       <span class="description">should return a valid edit todo text action</span>
@@ -163,7 +157,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     </div>
   
     <div class="suite passed">
-      <span class="description">Actions: stopEditingTodo</span>
+      <span class="description">5</span>
     
       <div class="specSummary passed">
       <span class="description">should return a valid stop editing todo action</span>
@@ -172,7 +166,7 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     </div>
   
     <div class="suite passed">
-      <span class="description">Actions: clearData</span>
+      <span class="description">6</span>
     
       <div class="specSummary passed">
       <span class="description">should return a valid clear data action</span>
@@ -180,14 +174,14 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
     
     </div>
   
-    <div class="suite failed">
-      <span class="description">Reducers: ADD_TODO</span>
+    <div class="suite passed">
+      <span class="description">7</span>
     
       <div class="specSummary passed">
       <span class="description">should add a todo to the state</span>
       </div>
     
-      <div class="specSummary failed">
+      <div class="specSummary passed">
       <span class="description">should add more than one todo</span>
       </div>
     
@@ -197,16 +191,6 @@ body { background-color: #eeeeee; padding: 0; margin: 5px; overflow-y: scroll; }
 </div>
 
 <div id="details">
-  
-  
-  <div class="specDetail failed">
-    <span class="description">Reducers: ADD_TODO should add more than one todo</span>
-    <div class="stackTrace">
-      <div class="resultMessage">Expected $.todos[0].todoText = 'Chicken Dinner' to equal 'Chicken Dinner, Turkey Dinner, Roast Beef'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/base/test/spec/reducers.js?48a7b7313552430c6e246dab2056f284d92c20da:76527:22)</div>
-    </div>
-  </div>
-  
   
 </div>
 
@@ -219,7 +203,7 @@ document.body.onkeypress = function (e) {
   switch (e.keyCode) {
     case 102: toggleFold(); break;
     case 49: showSummary(); break;
-    case 50: showFailures(); break;
+    
   }
 };
 

@@ -12,7 +12,6 @@ describe('Reducers:', () => {
       let state = {
         todos: []
       };
-
       const result = reducer(state, actions.addTodo("Chicken Dinner"));
 
       expect(result).toEqual({
@@ -30,7 +29,7 @@ describe('Reducers:', () => {
         todos: []
       };
 
-      const result = reducer(state, actions.addTodo("Chicken Dinner"));
+      const result = reducer(state, actions.addTodo("Chicken Dinner, Turkey Dinner, Roast Beef"));
 
       expect(result).toEqual({
         todos: [
@@ -42,5 +41,39 @@ describe('Reducers:', () => {
       });
     });
   });
-});
+  describe('REMOVE_TODO' , function() {
+   it('should remove a todo from the state' , function() {
+    let state = {
+      todos: []
+    };
+     
+    const result = reducer(state, actions.removeTodo("Turkey Dinner"));
+    
+    expect(result).toEqual({
+      todos: [
+        {
+          todoText: "Turkey Dinner"
+        }
+       
+       ]
+      });
+    )};
+  }};
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}); //this is the endline 
 
