@@ -44,7 +44,7 @@ describe('Reducers:', () => {
   describe('REMOVE_TODO' , function() {
    it('should remove a todo from the state' , function() {
     let state = {
-      todos: []
+      todos: ["Turkey Dinner"]
     };
      
     const result = reducer(state, actions.removeTodo("Turkey Dinner"));
