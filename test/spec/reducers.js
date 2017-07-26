@@ -44,12 +44,12 @@ describe('Reducers:', () => {
   describe('REMOVE_TODO' , function() {
    it('should remove a todo from the state' , function() {
     let state = {
-      todos: [
-        {
-        todoText: "Turkey Dinner",
-        status: "complete"
-        }
-      ]
+     todos: [
+          {
+            todoText: "Turkey Dinner",
+            status: "complete"
+          }
+        ]
 
     };
      
